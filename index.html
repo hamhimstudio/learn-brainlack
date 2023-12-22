@@ -59,16 +59,15 @@
 <p><strong>Note:</strong> You must add the Brainlack interpreter (bl.exe) to your system's PATH. Here's how:</p>
 <ol>
     <li><a href="https://github.com/armature64/brainlack/releases/download/v2/bl.exe">Download the project</a></li>
-    <li>Locate the downloaded bl.exe file.</li>
+    <li>Locate the downloaded bl.exe file and put it in a folder named <code>brainlack</code>. Put it in the <code>%USERPROFILE%</code> directory.</li>
     <li>Add the directory containing bl.exe to your system's PATH.</li>
 </ol>
 <p>On Windows, you can add bl.exe to your PATH by following these steps:</p>
 <ol>
-    <li>Right-click on "This PC" and select "Properties".</li>
-    <li>Click on "Advanced system settings".</li>
+    <li>In Windows search, look up "env" and press "Enter"</li>
     <li>Click on "Environment Variables...".</li>
     <li>Under "System variables", find and select the "Path" variable, then click on "Edit...".</li>
-    <li>In the "Variable value" field, append the full path to the directory containing bl.exe, preceded by a semicolon (;).</li>
+    <li>In the "Variable value" field, add <code>%USERPROFILE%\brainlack</code>.</li>
     <li>Click "OK" on all dialogs to save your changes.</li>
 </ol>
 <p>Once you've added bl.exe to your PATH, you can run a Brainlack program by typing `bl <filename>.bl` in your terminal, where `<filename>.bl` is the name of your Brainlack program file.</p>
