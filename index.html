@@ -45,7 +45,7 @@
 <ol>
     <li>Open a new file in your text editor.</li>
     <li>Type the following commands: <code>[.(.]</code></li>
-    <li>Save the file with the name "main.bl".</li>
+    <li>Save the file with the name <code>main.bl</code>.</li>
 </ol>
 <p>This program will increment the value in the first memory cell, move the pointer to the right, and then decrement the value in the second memory cell.</p>
     <h2>Debugging Your Brainlack Programs</h2>
@@ -63,8 +63,19 @@
         <li>Select "File" > "New" > "Project..." from the menu.</li>
         <li>In the "Create a new project" dialog, select "Console App" under the "C++" category.</li>
         <li>Click "Next", give your project a name, and click "Create".</li>
-        <li>Replace the generated code with your Brainlack interpreter code.</li>
+        <li>Replace the generated code with the C code.</li>
+        <li>Rename <code>main.cpp</code> to <code>main.c</code>.</li>
+        <li>Disable Precompiled Headers (below).</li>
+        <li>Make a file named <code>main.bl</code> and write your code.</li>
         <li>Press F5 or select "Debug" > "Start Debugging" from the menu to run your project.</li>
+    </ol>
+    <h2>Disabling Precompiled Headers</h2>
+    <p>If you need to disable precompiled headers in your project, follow these steps:</p>
+    <ol>
+        <li>Right-click on your project in the Solution Explorer and select "Properties".</li>
+        <li>In the Properties dialog, navigate to "Configuration Properties" > "C/C++" > "Precompiled Headers".</li>
+        <li>Set "Precompiled Header" to "Not Using Precompiled Headers".</li>
+        <li>Click "OK" to save your changes.</li>
     </ol>
     <h2>Example</h2>
     <ol>
@@ -72,7 +83,7 @@
             <pre><code>[..*,,(.*).]</code></pre>
             This command sequence will increment the value in the current memory cell twice, double it, triple it twice, move the memory pointer to the right, double the value in the new memory cell, output the ASCII value, move the memory pointer to the left, and output the ASCII value again.
         </li>
-        <li>Next, save the file with "main.bl".</li>
+        <li>Next, save the file with <code>main.bl</code>.</li>
         <li>Finally, run the project.
             The interpreter will execute the commands in the file and print the output to the console.
         </li>
