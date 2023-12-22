@@ -1,0 +1,4 @@
+site_name: brainlack
+theme:
+  name: terminal
+  palette: gruvbox_dark
